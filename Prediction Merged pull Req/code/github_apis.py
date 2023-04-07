@@ -7,7 +7,7 @@ import json
 
 def get_pull_requests(url):
     # define the GitHub token
-    TOKEN = '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'
+    TOKEN = "Insert your Token"
 
     url = url+"/pulls"
     headers = {'Authorization': f'token {TOKEN}'}
@@ -20,7 +20,7 @@ def get_pull_requests(url):
 
 def get_comments(url,pr_number):
     # define the GitHub token
-    TOKEN = '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'
+    TOKEN = "Insert your Token"
     url = url +"/pulls" + "/comments" 
     print (url)
     # url = url+"/pulls/comments"
@@ -32,7 +32,7 @@ def get_comments(url,pr_number):
 
 def get_review(url,pr_number):
     # define the GitHub token
-    TOKEN = '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'
+    TOKEN = "Insert your Token"
     url = url +"/pulls/" + str(pr_number) + "/comments" 
     print (url)
     # url = url+"/pulls/comments"
